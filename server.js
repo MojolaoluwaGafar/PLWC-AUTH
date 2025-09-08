@@ -9,7 +9,10 @@ const userRoutes = require("./routes/userRouter")
 
 //middlewares
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: "https://product-list-with-cart-two-kappa.vercel.app",
+    credentials: true
+}))
 
 
 
